@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@color/whiteTextColor"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="305dp"
+        android:background="@drawable/red_bg">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="166dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/editFullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="53dp"
+                android:src="@drawable/username" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editName"
+                style="@style/modifiedEditText"
+                android:layout_width="259dp"
+                android:layout_height="match_parent"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:maxLines="1">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="48dp"
+                android:src="@drawable/lock" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPassword"
+                style="@style/modifiedEditText"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:src="@drawable/email_sign" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editEmail"
+                style="@style/modifiedEditText"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_background_blue"
+        android:text="Update"
+        android:textColor="#fff"
+        />
+
+
+</LinearLayout>
